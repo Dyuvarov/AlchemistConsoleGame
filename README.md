@@ -2,8 +2,8 @@
 
 ### To do:
 - [x] main logic
-- [ ] tests
-- [ ] logs
-- [ ] UML classes diagram
+- [x] tests
+- [x] logs
+- [x] UML classes diagram
 - [ ] presentation gif
 - [ ] Readme.md

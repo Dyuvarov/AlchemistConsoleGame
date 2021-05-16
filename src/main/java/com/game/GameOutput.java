@@ -3,6 +3,7 @@ package com.game;
 public class GameOutput
 {
     final static int DELAY = 40;
+
     public static void SlowOutput(String msg)
     {
         for (char c : msg.toCharArray())
@@ -34,6 +35,7 @@ public class GameOutput
                 "That is your last chance. Gold or death. Don't let your people down!\n";
         SlowOutput(message);
     }
+
     public static void showHowToPlayMessage()
     {
         String message = "\nHow to play:\n" +
