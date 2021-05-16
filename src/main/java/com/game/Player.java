@@ -109,22 +109,29 @@ public class Player
                                             .orElse(null);
         if (combo == null)
         {
+            Main.LOGGER.info("Wrong combination: " + item1 + " and " + item2);
             System.out.println("BOOOM! Items exploded in your hands. Bad choice, try something else.");
         }
         else
         {
+            Main.LOGGER.info("Right combination: " + item1 + " and " + item2 +
+                    " result: " + combo.getResult().getName());
             try
             {
                 this.inventory.add(combo.getResult().clone());
             }
             catch(CloneNotSupportedException ex)
             {
+                Main.LOGGER.debug("ERROR: item " + combo.getResult().getName() +
+                        " cloning error while adding it in inventory", ex);
                 System.out.println(ex.getMessage());
             }
             System.out.println(combo.getMessage());
             if (combo.getResult().getName() == "Gold")
             {
-                System.out.println("Thats all. You win!");
+                System.out.println("Thats all. You won!");
+                Main.LOGGER.info("User won");
+                Main.LOGGER.info("Game closed");
                 System.exit(0);
             }
         }

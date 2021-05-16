@@ -1,19 +1,20 @@
 package com.game;
 
-import javafx.print.PageLayout;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Scanner;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 public class Main
 {
+    public static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
-    public static void main(String[] args) throws InterruptedException
+    public static void main(String[] args)
     {
+        LOGGER.info("Game launched");
         GameData gamedata = new GameData();
+        LOGGER.info("World initialized successfully");
 
         GameOutput.showWelcomeMessage();
         GameOutput.showHowToPlayMessage();
@@ -27,6 +28,7 @@ public class Main
             if (result != 0)
                 play = false;
         }
+        LOGGER.info("Game closed");
     }
 
     public static int   handlePlayerInput(GameData gameData, BufferedReader reader)
@@ -38,6 +40,7 @@ public class Main
         }
         catch (IOException ex)
         {
+            LOGGER.debug("Input reading error", ex);
             System.out.println("Input ERROR!");
             return -1;
         }
@@ -54,13 +57,18 @@ public class Main
             return -1;
         }
         else if (inputArr[0].equals(Command.LOOK_AROUND.toString()))
+        {
             player.lookAround();
+        }
+
         else if (inputArr[0].equals(Command.GO.toString()))
         {
             if (inputArr.length == 2)
                 player.go(inputArr[1]);
             else
+            {
                 System.out.println("Wrong arguments");
+            }
         }
         else if (inputArr[0].equals(Command.TAKE.toString()))
         {
@@ -81,8 +89,10 @@ public class Main
         else if (inputArr[0].equals(Command.HELP.toString()))
             GameOutput.showCommands();
         else
+        {
+            LOGGER.info("User tried use wrong command");
             System.out.println("Wrong command");
-
+        }
         return 0;
     }
 }

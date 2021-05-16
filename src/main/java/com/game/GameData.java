@@ -98,6 +98,7 @@ public class GameData
             }
             catch (CloneNotSupportedException exeption)
             {
+                Main.LOGGER.debug("ERROR: cloning item " + item.getName() + "error.", exeption);
                 System.out.println(exeption.getMessage());
             }
         }
