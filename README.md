@@ -2,7 +2,7 @@
 
 ### To do:
 - [x] main logic
-- [ ] tests
+- [x] tests
 - [ ] logs
 - [ ] UML classes diagram
 - [ ] presentation gif
