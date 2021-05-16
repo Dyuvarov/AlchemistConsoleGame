@@ -124,16 +124,3 @@ public class GameData
     private List<Location>  locations;
     private Player          player;
 }
-//                    11111111111
-//                    1  "Lake" 1
-//                    11111111111
-//                        /|\
-//                        S|N
-//111111111111111  W  11111111111111
-//1"Dark forest"1---->1"Bear's Den"1
-//111111111111111  E  11111111111111
-//       S|N
-//       \|/
-//   111111111111111111
-//   1      "Dungeon" 1
-//   111111111111111111

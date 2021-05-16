@@ -15,8 +15,8 @@ public class Main
     {
         GameData gamedata = new GameData();
 
-//        GameOutput.showWelcomeMessage();
-//        GameOutput.showHowToPlayMessage();
+        GameOutput.showWelcomeMessage();
+        GameOutput.showHowToPlayMessage();
 
 
         boolean play = true;

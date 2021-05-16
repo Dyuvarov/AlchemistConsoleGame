@@ -5,6 +5,8 @@ import java.util.Optional;
 
 public class Inventory
 {
+    private List<Item> items;
+
     public Inventory()
     {
         items = new ArrayList<Item>();
@@ -37,6 +39,4 @@ public class Inventory
     {
         return items;
     }
-
-    private List<Item> items;
 }

@@ -30,6 +30,11 @@ public class Player
      */
     public void go(String strDir)
     {
+        if (strDir == null || strDir.isEmpty())
+        {
+            System.out.println("Bad direction");
+            return ;
+        }
         Direction playerdir;
         try
         {
@@ -134,6 +139,8 @@ public class Player
         System.out.println("Your inventory: ");
         inventory.show();
     }
+
+    public Location getLocation()   { return location; }
 
     private Location    location;
     private Inventory   inventory;
