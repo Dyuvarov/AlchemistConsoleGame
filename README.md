@@ -3,7 +3,7 @@
 ### To do:
 - [x] main logic
 - [x] tests
-- [ ] logs
-- [ ] UML classes diagram
+- [x] logs
+- [x] UML classes diagram
 - [ ] presentation gif
 - [ ] Readme.md
