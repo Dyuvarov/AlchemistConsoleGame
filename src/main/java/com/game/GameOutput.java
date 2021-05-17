@@ -32,7 +32,7 @@ public class GameOutput
                 "People in your village are starving, and you can save them. If you learn to create gold " +
                 "your people will never be hungry again.\n" +
                 "You are already so close, but you are missing something...\n" +
-                "That is your last chance. Gold or death. Don't let your people down!\n";
+                "This is your last chance. Gold or death. Don't let your people down!\n";
         SlowOutput(message);
     }
 
@@ -54,6 +54,7 @@ public class GameOutput
         String message = "look - shows current location, items on this location, possible directions to go\n" +
                 "go [SOUTH/NORTH/WEST/EAST]- change location\n" +
                 "take [item] - take item in inventory\n" +
+                "inventory - shows items in your inventory\n" +
                 "combo [item1] [item2] - try to combine items\n" +
                 "quit - close game\n";
         System.out.println(message);
