@@ -44,8 +44,8 @@ quit - close game
 ### Этот проект о:
 :small_blue_diamond: потоки стандартного ввода/вывода  
 :small_blue_diamond: streamAPI  
-:small_blue_diamond: логирование log4j  
-:small_blue_diamond: тестирование jUnit  
+:small_blue_diamond: логирование (log4j)  
+:small_blue_diamond: тестирование (jUnit)  
 :small_blue_diamond: Maven
 
 ### Предыстория :book:
