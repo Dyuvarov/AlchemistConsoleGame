@@ -2,7 +2,7 @@
 
 ![action](action.gif)
 
-[EN :us:](##This project about)  
+[EN :us:](#This project about)  
 [RU :ru:](#RU)
 
 ## This project about:
