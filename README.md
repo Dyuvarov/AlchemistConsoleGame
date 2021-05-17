@@ -2,7 +2,7 @@
 
 ![action](action.gif)
 
-[EN :us:](#EN) 
+[EN :us:](#EN)  
 [RU :ru:](#RU)
 
 ### EN
