@@ -2,9 +2,10 @@
 
 ![action](action.gif)
 
-[EN :us:](#This project about)  
+[EN :us:](#EN) 
 [RU :ru:](#RU)
 
+### EN
 ## This project about:
 :small_blue_diamond: standard input/output  
 :small_blue_diamond: streamAPI  
