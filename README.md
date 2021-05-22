@@ -6,7 +6,7 @@
 [RU :ru:](#RU)
 
 ### EN
-## This project about:
+## This project is about:
 :small_blue_diamond: standard input/output  
 :small_blue_diamond: streamAPI  
 :small_blue_diamond: logging (log4j)  
